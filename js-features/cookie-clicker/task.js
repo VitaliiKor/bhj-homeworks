@@ -6,7 +6,7 @@ document.getElementById("clicker__counter").innerHTML = clickNumber;
 cookie.onmousedown = function () {
 	clickNumber = clickNumber + 1; 
 	document.getElementById("clicker__counter").innerHTML = clickNumber;
-	if (cookie.onmousedown()%2 !== 0){
+	if (clickNumber%2 !== 0){
 		cookie.width = 100;
 		cookie.height = 64;
 	}  else {
